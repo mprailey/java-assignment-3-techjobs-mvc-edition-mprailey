@@ -173,6 +173,12 @@ public class JobData {
                 PositionType newPosition = (PositionType) findExistingObject(allPositionTypes, aPosition);
                 CoreCompetency newSkill = (CoreCompetency) findExistingObject(allCoreCompetency, aSkill);
 
+
+
+
+
+
+
                 if (newEmployer == null){
                     newEmployer = new Employer(anEmployer);
                     allEmployers.add(newEmployer);
@@ -205,6 +211,7 @@ public class JobData {
             e.printStackTrace();
         }
     }
+
 
     public static ArrayList<Employer> getAllEmployers() {
         loadData();
